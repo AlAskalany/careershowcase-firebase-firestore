@@ -1,0 +1,39 @@
+{
+  "name": "careershowcase-firebase-firestore",
+  "version": "1.0.0",
+  "description": "Career Showcase Firebase project's Firestore.",
+  "main": "index.js",
+  "scripts": {
+    "deploy-rules-indexes": "firebase deploy --only firestore \"Depoying Firestore rules and indexes\"",
+    "deploy-rules-indexes:ci": "firebase deploy --token \"$FIREBASE_TOKEN\" --only firestore \"Depoying Firestore rules and indexes\"",
+    "deploy-rules": "firebase deploy --only firestore:rules \"Depoying Firestore rules\"",
+    "deploy-rules:ci": "firebase deploy --token \"$FIREBASE_TOKEN\" --only firestore:rules \"Depoying Firestore rules\"",
+    "deploy-indexes": "firebase deploy --only firestore:indexes \"Depoying Firestore indexes\"",
+    "deploy-indexes:ci": "firebase deploy --token \"$FIREBASE_TOKEN\" --only firestore:indexes \"Depoying Firestore indexes\"",
+    "delete": "firebase firestore:delete",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "scriptsComments": {
+    "deploy-rules-indexes": "Deploy Cloud Firestore rules and indexes",
+    "deploy-rules": "Deploy Cloud Firestore rules",
+    "deploy-indexes": "Deploy Cloud Firestore indexes",
+    "delete": "Delete documents in Cloud Firestore. With the Firebase CLI you can use recursive deletes to delete all the documents in a collection.",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlAskalany/careershowcase-firebase-firestore.git"
+  },
+  "keywords": [
+    "career",
+    "showcase"
+  ],
+  "author": "Ahmed AlAskalany <ahmed.alaskalany@gmail.com> (https://www.alaskalany.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlAskalany/careershowcase-firebase-firestore/issues"
+  },
+  "homepage": "https://github.com/AlAskalany/careershowcase-firebase-firestore#readme",
+  "devDependencies": {
+    "firebase-tools": "^6.0.1"
+  }
+}
